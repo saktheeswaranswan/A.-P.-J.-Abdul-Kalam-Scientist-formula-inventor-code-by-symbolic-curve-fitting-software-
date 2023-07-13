@@ -1,0 +1,5 @@
+A Monte Carlo search for a symbolic model that fits given data. User needs to provide an error function (of how well a model fits the data) and some basic building blocks (math operations, variables, constants), from which random models will be generated. Procedure scales on multicore CPUs by running several independent Monte Carlo loops in parallel and subsequently accumulating obtained results.
+
+Demo
+A dummy case of fitting sqrt() function using the following - unary operations: log(abs()), sin(), cos(); binary operations: +, -, *, /; constants: e, pi; variables: x.
+Evaluation time is set to 10 minutes. Total number of generated models is ~ 6 000 000 (on quad-core intel i7 desktop).
